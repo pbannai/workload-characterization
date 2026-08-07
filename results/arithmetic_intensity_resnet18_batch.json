@@ -1,0 +1,4238 @@
+{
+  "device": "cpu",
+  "precision": "fp32",
+  "results": [
+    {
+      "batch_size": 1,
+      "whole_model_flops": 1819065856,
+      "total_flops": 1819065856,
+      "total_bytes": 107919072,
+      "arithmetic_intensity": 16.855833007904295,
+      "layers": [
+        {
+          "name": "conv1",
+          "type": "Conv2d",
+          "flops": 118013952,
+          "input_bytes": 602112,
+          "output_bytes": 3211264,
+          "weight_bytes": 37632,
+          "total_bytes": 3851008,
+          "arithmetic_intensity": 30.644951140065146
+        },
+        {
+          "name": "layer1.0.conv1",
+          "type": "Conv2d",
+          "flops": 115605504,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 147456,
+          "total_bytes": 1753088,
+          "arithmetic_intensity": 65.94392523364486
+        },
+        {
+          "name": "layer1.0.conv2",
+          "type": "Conv2d",
+          "flops": 115605504,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 147456,
+          "total_bytes": 1753088,
+          "arithmetic_intensity": 65.94392523364486
+        },
+        {
+          "name": "layer1.1.conv1",
+          "type": "Conv2d",
+          "flops": 115605504,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 147456,
+          "total_bytes": 1753088,
+          "arithmetic_intensity": 65.94392523364486
+        },
+        {
+          "name": "layer1.1.conv2",
+          "type": "Conv2d",
+          "flops": 115605504,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 147456,
+          "total_bytes": 1753088,
+          "arithmetic_intensity": 65.94392523364486
+        },
+        {
+          "name": "layer2.0.conv2",
+          "type": "Conv2d",
+          "flops": 115605504,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 589824,
+          "total_bytes": 1392640,
+          "arithmetic_intensity": 83.01176470588236
+        },
+        {
+          "name": "layer2.1.conv1",
+          "type": "Conv2d",
+          "flops": 115605504,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 589824,
+          "total_bytes": 1392640,
+          "arithmetic_intensity": 83.01176470588236
+        },
+        {
+          "name": "layer2.1.conv2",
+          "type": "Conv2d",
+          "flops": 115605504,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 589824,
+          "total_bytes": 1392640,
+          "arithmetic_intensity": 83.01176470588236
+        },
+        {
+          "name": "layer3.0.conv2",
+          "type": "Conv2d",
+          "flops": 115605504,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 2359296,
+          "total_bytes": 2760704,
+          "arithmetic_intensity": 41.875370919881306
+        },
+        {
+          "name": "layer3.1.conv1",
+          "type": "Conv2d",
+          "flops": 115605504,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 2359296,
+          "total_bytes": 2760704,
+          "arithmetic_intensity": 41.875370919881306
+        },
+        {
+          "name": "layer3.1.conv2",
+          "type": "Conv2d",
+          "flops": 115605504,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 2359296,
+          "total_bytes": 2760704,
+          "arithmetic_intensity": 41.875370919881306
+        },
+        {
+          "name": "layer4.0.conv2",
+          "type": "Conv2d",
+          "flops": 115605504,
+          "input_bytes": 100352,
+          "output_bytes": 100352,
+          "weight_bytes": 9437184,
+          "total_bytes": 9637888,
+          "arithmetic_intensity": 11.994900127496813
+        },
+        {
+          "name": "layer4.1.conv1",
+          "type": "Conv2d",
+          "flops": 115605504,
+          "input_bytes": 100352,
+          "output_bytes": 100352,
+          "weight_bytes": 9437184,
+          "total_bytes": 9637888,
+          "arithmetic_intensity": 11.994900127496813
+        },
+        {
+          "name": "layer4.1.conv2",
+          "type": "Conv2d",
+          "flops": 115605504,
+          "input_bytes": 100352,
+          "output_bytes": 100352,
+          "weight_bytes": 9437184,
+          "total_bytes": 9637888,
+          "arithmetic_intensity": 11.994900127496813
+        },
+        {
+          "name": "layer2.0.conv1",
+          "type": "Conv2d",
+          "flops": 57802752,
+          "input_bytes": 802816,
+          "output_bytes": 401408,
+          "weight_bytes": 294912,
+          "total_bytes": 1499136,
+          "arithmetic_intensity": 38.557377049180324
+        },
+        {
+          "name": "layer3.0.conv1",
+          "type": "Conv2d",
+          "flops": 57802752,
+          "input_bytes": 401408,
+          "output_bytes": 200704,
+          "weight_bytes": 1179648,
+          "total_bytes": 1781760,
+          "arithmetic_intensity": 32.44137931034483
+        },
+        {
+          "name": "layer4.0.conv1",
+          "type": "Conv2d",
+          "flops": 57802752,
+          "input_bytes": 200704,
+          "output_bytes": 100352,
+          "weight_bytes": 4718592,
+          "total_bytes": 5019648,
+          "arithmetic_intensity": 11.51529987760098
+        },
+        {
+          "name": "layer2.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 6422528,
+          "input_bytes": 802816,
+          "output_bytes": 401408,
+          "weight_bytes": 32768,
+          "total_bytes": 1236992,
+          "arithmetic_intensity": 5.19205298013245
+        },
+        {
+          "name": "layer3.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 6422528,
+          "input_bytes": 401408,
+          "output_bytes": 200704,
+          "weight_bytes": 131072,
+          "total_bytes": 733184,
+          "arithmetic_intensity": 8.759776536312849
+        },
+        {
+          "name": "layer4.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 6422528,
+          "input_bytes": 200704,
+          "output_bytes": 100352,
+          "weight_bytes": 524288,
+          "total_bytes": 825344,
+          "arithmetic_intensity": 7.781637717121588
+        },
+        {
+          "name": "bn1",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 1032,
+          "total_bytes": 6423560,
+          "arithmetic_intensity": 0.24995983535609537
+        },
+        {
+          "name": "fc",
+          "type": "Linear",
+          "flops": 512000,
+          "input_bytes": 2048,
+          "output_bytes": 4000,
+          "weight_bytes": 2052000,
+          "total_bytes": 2058048,
+          "arithmetic_intensity": 0.24877942594147465
+        },
+        {
+          "name": "layer1.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 1032,
+          "total_bytes": 1606664,
+          "arithmetic_intensity": 0.24983941882061214
+        },
+        {
+          "name": "layer1.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 1032,
+          "total_bytes": 1606664,
+          "arithmetic_intensity": 0.24983941882061214
+        },
+        {
+          "name": "layer1.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 1032,
+          "total_bytes": 1606664,
+          "arithmetic_intensity": 0.24983941882061214
+        },
+        {
+          "name": "layer1.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 1032,
+          "total_bytes": 1606664,
+          "arithmetic_intensity": 0.24983941882061214
+        },
+        {
+          "name": "layer2.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 200704,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 2056,
+          "total_bytes": 804872,
+          "arithmetic_intensity": 0.24936138914013656
+        },
+        {
+          "name": "layer2.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 200704,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 2056,
+          "total_bytes": 804872,
+          "arithmetic_intensity": 0.24936138914013656
+        },
+        {
+          "name": "layer2.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 200704,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 2056,
+          "total_bytes": 804872,
+          "arithmetic_intensity": 0.24936138914013656
+        },
+        {
+          "name": "layer2.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 200704,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 2056,
+          "total_bytes": 804872,
+          "arithmetic_intensity": 0.24936138914013656
+        },
+        {
+          "name": "layer2.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 200704,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 2056,
+          "total_bytes": 804872,
+          "arithmetic_intensity": 0.24936138914013656
+        },
+        {
+          "name": "layer3.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 100352,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 4104,
+          "total_bytes": 405512,
+          "arithmetic_intensity": 0.24746986525676182
+        },
+        {
+          "name": "layer3.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 100352,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 4104,
+          "total_bytes": 405512,
+          "arithmetic_intensity": 0.24746986525676182
+        },
+        {
+          "name": "layer3.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 100352,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 4104,
+          "total_bytes": 405512,
+          "arithmetic_intensity": 0.24746986525676182
+        },
+        {
+          "name": "layer3.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 100352,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 4104,
+          "total_bytes": 405512,
+          "arithmetic_intensity": 0.24746986525676182
+        },
+        {
+          "name": "layer3.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 100352,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 4104,
+          "total_bytes": 405512,
+          "arithmetic_intensity": 0.24746986525676182
+        },
+        {
+          "name": "layer4.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 50176,
+          "input_bytes": 100352,
+          "output_bytes": 100352,
+          "weight_bytes": 8200,
+          "total_bytes": 208904,
+          "arithmetic_intensity": 0.24018688009803546
+        },
+        {
+          "name": "layer4.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 50176,
+          "input_bytes": 100352,
+          "output_bytes": 100352,
+          "weight_bytes": 8200,
+          "total_bytes": 208904,
+          "arithmetic_intensity": 0.24018688009803546
+        },
+        {
+          "name": "layer4.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 50176,
+          "input_bytes": 100352,
+          "output_bytes": 100352,
+          "weight_bytes": 8200,
+          "total_bytes": 208904,
+          "arithmetic_intensity": 0.24018688009803546
+        },
+        {
+          "name": "layer4.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 50176,
+          "input_bytes": 100352,
+          "output_bytes": 100352,
+          "weight_bytes": 8200,
+          "total_bytes": 208904,
+          "arithmetic_intensity": 0.24018688009803546
+        },
+        {
+          "name": "layer4.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 50176,
+          "input_bytes": 100352,
+          "output_bytes": 100352,
+          "weight_bytes": 8200,
+          "total_bytes": 208904,
+          "arithmetic_intensity": 0.24018688009803546
+        },
+        {
+          "name": "avgpool",
+          "type": "AdaptiveAvgPool2d",
+          "flops": 25088,
+          "input_bytes": 100352,
+          "output_bytes": 2048,
+          "weight_bytes": 0,
+          "total_bytes": 102400,
+          "arithmetic_intensity": 0.245
+        },
+        {
+          "name": "relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 0,
+          "total_bytes": 6422528,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "maxpool",
+          "type": "MaxPool2d",
+          "flops": 0,
+          "input_bytes": 3211264,
+          "output_bytes": 802816,
+          "weight_bytes": 0,
+          "total_bytes": 4014080,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer1.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 0,
+          "total_bytes": 3211264,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer1.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 0,
+          "total_bytes": 3211264,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer2.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 0,
+          "total_bytes": 1605632,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer2.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 0,
+          "total_bytes": 1605632,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer3.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 0,
+          "total_bytes": 802816,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer3.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 0,
+          "total_bytes": 802816,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer4.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 0,
+          "total_bytes": 401408,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer4.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 0,
+          "total_bytes": 401408,
+          "arithmetic_intensity": 0.0
+        }
+      ]
+    },
+    {
+      "batch_size": 2,
+      "whole_model_flops": 3638131712,
+      "total_flops": 3638131712,
+      "total_bytes": 169041536,
+      "arithmetic_intensity": 21.522116978397545,
+      "layers": [
+        {
+          "name": "conv1",
+          "type": "Conv2d",
+          "flops": 236027904,
+          "input_bytes": 1204224,
+          "output_bytes": 6422528,
+          "weight_bytes": 37632,
+          "total_bytes": 7664384,
+          "arithmetic_intensity": 30.795417348608837
+        },
+        {
+          "name": "layer1.0.conv1",
+          "type": "Conv2d",
+          "flops": 231211008,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 147456,
+          "total_bytes": 3358720,
+          "arithmetic_intensity": 68.8390243902439
+        },
+        {
+          "name": "layer1.0.conv2",
+          "type": "Conv2d",
+          "flops": 231211008,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 147456,
+          "total_bytes": 3358720,
+          "arithmetic_intensity": 68.8390243902439
+        },
+        {
+          "name": "layer1.1.conv1",
+          "type": "Conv2d",
+          "flops": 231211008,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 147456,
+          "total_bytes": 3358720,
+          "arithmetic_intensity": 68.8390243902439
+        },
+        {
+          "name": "layer1.1.conv2",
+          "type": "Conv2d",
+          "flops": 231211008,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 147456,
+          "total_bytes": 3358720,
+          "arithmetic_intensity": 68.8390243902439
+        },
+        {
+          "name": "layer2.0.conv2",
+          "type": "Conv2d",
+          "flops": 231211008,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 589824,
+          "total_bytes": 2195456,
+          "arithmetic_intensity": 105.31343283582089
+        },
+        {
+          "name": "layer2.1.conv1",
+          "type": "Conv2d",
+          "flops": 231211008,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 589824,
+          "total_bytes": 2195456,
+          "arithmetic_intensity": 105.31343283582089
+        },
+        {
+          "name": "layer2.1.conv2",
+          "type": "Conv2d",
+          "flops": 231211008,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 589824,
+          "total_bytes": 2195456,
+          "arithmetic_intensity": 105.31343283582089
+        },
+        {
+          "name": "layer3.0.conv2",
+          "type": "Conv2d",
+          "flops": 231211008,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 2359296,
+          "total_bytes": 3162112,
+          "arithmetic_intensity": 73.11917098445596
+        },
+        {
+          "name": "layer3.1.conv1",
+          "type": "Conv2d",
+          "flops": 231211008,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 2359296,
+          "total_bytes": 3162112,
+          "arithmetic_intensity": 73.11917098445596
+        },
+        {
+          "name": "layer3.1.conv2",
+          "type": "Conv2d",
+          "flops": 231211008,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 2359296,
+          "total_bytes": 3162112,
+          "arithmetic_intensity": 73.11917098445596
+        },
+        {
+          "name": "layer4.0.conv2",
+          "type": "Conv2d",
+          "flops": 231211008,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 9437184,
+          "total_bytes": 9838592,
+          "arithmetic_intensity": 23.500416319733556
+        },
+        {
+          "name": "layer4.1.conv1",
+          "type": "Conv2d",
+          "flops": 231211008,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 9437184,
+          "total_bytes": 9838592,
+          "arithmetic_intensity": 23.500416319733556
+        },
+        {
+          "name": "layer4.1.conv2",
+          "type": "Conv2d",
+          "flops": 231211008,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 9437184,
+          "total_bytes": 9838592,
+          "arithmetic_intensity": 23.500416319733556
+        },
+        {
+          "name": "layer2.0.conv1",
+          "type": "Conv2d",
+          "flops": 115605504,
+          "input_bytes": 1605632,
+          "output_bytes": 802816,
+          "weight_bytes": 294912,
+          "total_bytes": 2703360,
+          "arithmetic_intensity": 42.763636363636365
+        },
+        {
+          "name": "layer3.0.conv1",
+          "type": "Conv2d",
+          "flops": 115605504,
+          "input_bytes": 802816,
+          "output_bytes": 401408,
+          "weight_bytes": 1179648,
+          "total_bytes": 2383872,
+          "arithmetic_intensity": 48.49484536082474
+        },
+        {
+          "name": "layer4.0.conv1",
+          "type": "Conv2d",
+          "flops": 115605504,
+          "input_bytes": 401408,
+          "output_bytes": 200704,
+          "weight_bytes": 4718592,
+          "total_bytes": 5320704,
+          "arithmetic_intensity": 21.727482678983833
+        },
+        {
+          "name": "layer2.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 12845056,
+          "input_bytes": 1605632,
+          "output_bytes": 802816,
+          "weight_bytes": 32768,
+          "total_bytes": 2441216,
+          "arithmetic_intensity": 5.261744966442953
+        },
+        {
+          "name": "layer3.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 12845056,
+          "input_bytes": 802816,
+          "output_bytes": 401408,
+          "weight_bytes": 131072,
+          "total_bytes": 1335296,
+          "arithmetic_intensity": 9.61963190184049
+        },
+        {
+          "name": "layer4.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 12845056,
+          "input_bytes": 401408,
+          "output_bytes": 200704,
+          "weight_bytes": 524288,
+          "total_bytes": 1126400,
+          "arithmetic_intensity": 11.403636363636364
+        },
+        {
+          "name": "bn1",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 1032,
+          "total_bytes": 12846088,
+          "arithmetic_intensity": 0.24997991606471948
+        },
+        {
+          "name": "fc",
+          "type": "Linear",
+          "flops": 1024000,
+          "input_bytes": 4096,
+          "output_bytes": 8000,
+          "weight_bytes": 2052000,
+          "total_bytes": 2064096,
+          "arithmetic_intensity": 0.49610095654465686
+        },
+        {
+          "name": "layer1.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 1032,
+          "total_bytes": 3212296,
+          "arithmetic_intensity": 0.24991968361570666
+        },
+        {
+          "name": "layer1.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 1032,
+          "total_bytes": 3212296,
+          "arithmetic_intensity": 0.24991968361570666
+        },
+        {
+          "name": "layer1.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 1032,
+          "total_bytes": 3212296,
+          "arithmetic_intensity": 0.24991968361570666
+        },
+        {
+          "name": "layer1.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 1032,
+          "total_bytes": 3212296,
+          "arithmetic_intensity": 0.24991968361570666
+        },
+        {
+          "name": "layer2.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 2056,
+          "total_bytes": 1607688,
+          "arithmetic_intensity": 0.24968028622469035
+        },
+        {
+          "name": "layer2.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 2056,
+          "total_bytes": 1607688,
+          "arithmetic_intensity": 0.24968028622469035
+        },
+        {
+          "name": "layer2.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 2056,
+          "total_bytes": 1607688,
+          "arithmetic_intensity": 0.24968028622469035
+        },
+        {
+          "name": "layer2.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 2056,
+          "total_bytes": 1607688,
+          "arithmetic_intensity": 0.24968028622469035
+        },
+        {
+          "name": "layer2.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 2056,
+          "total_bytes": 1607688,
+          "arithmetic_intensity": 0.24968028622469035
+        },
+        {
+          "name": "layer3.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 200704,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 4104,
+          "total_bytes": 806920,
+          "arithmetic_intensity": 0.24872849848807813
+        },
+        {
+          "name": "layer3.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 200704,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 4104,
+          "total_bytes": 806920,
+          "arithmetic_intensity": 0.24872849848807813
+        },
+        {
+          "name": "layer3.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 200704,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 4104,
+          "total_bytes": 806920,
+          "arithmetic_intensity": 0.24872849848807813
+        },
+        {
+          "name": "layer3.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 200704,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 4104,
+          "total_bytes": 806920,
+          "arithmetic_intensity": 0.24872849848807813
+        },
+        {
+          "name": "layer3.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 200704,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 4104,
+          "total_bytes": 806920,
+          "arithmetic_intensity": 0.24872849848807813
+        },
+        {
+          "name": "layer4.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 100352,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 8200,
+          "total_bytes": 409608,
+          "arithmetic_intensity": 0.24499521493720824
+        },
+        {
+          "name": "layer4.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 100352,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 8200,
+          "total_bytes": 409608,
+          "arithmetic_intensity": 0.24499521493720824
+        },
+        {
+          "name": "layer4.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 100352,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 8200,
+          "total_bytes": 409608,
+          "arithmetic_intensity": 0.24499521493720824
+        },
+        {
+          "name": "layer4.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 100352,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 8200,
+          "total_bytes": 409608,
+          "arithmetic_intensity": 0.24499521493720824
+        },
+        {
+          "name": "layer4.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 100352,
+          "input_bytes": 200704,
+          "output_bytes": 200704,
+          "weight_bytes": 8200,
+          "total_bytes": 409608,
+          "arithmetic_intensity": 0.24499521493720824
+        },
+        {
+          "name": "avgpool",
+          "type": "AdaptiveAvgPool2d",
+          "flops": 50176,
+          "input_bytes": 200704,
+          "output_bytes": 4096,
+          "weight_bytes": 0,
+          "total_bytes": 204800,
+          "arithmetic_intensity": 0.245
+        },
+        {
+          "name": "relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 0,
+          "total_bytes": 12845056,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "maxpool",
+          "type": "MaxPool2d",
+          "flops": 0,
+          "input_bytes": 6422528,
+          "output_bytes": 1605632,
+          "weight_bytes": 0,
+          "total_bytes": 8028160,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer1.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 0,
+          "total_bytes": 6422528,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer1.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 0,
+          "total_bytes": 6422528,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer2.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 0,
+          "total_bytes": 3211264,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer2.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 0,
+          "total_bytes": 3211264,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer3.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 0,
+          "total_bytes": 1605632,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer3.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 0,
+          "total_bytes": 1605632,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer4.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 0,
+          "total_bytes": 802816,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer4.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 0,
+          "total_bytes": 802816,
+          "arithmetic_intensity": 0.0
+        }
+      ]
+    },
+    {
+      "batch_size": 4,
+      "whole_model_flops": 7276263424,
+      "total_flops": 7276263424,
+      "total_bytes": 291286464,
+      "arithmetic_intensity": 24.97975128703543,
+      "layers": [
+        {
+          "name": "conv1",
+          "type": "Conv2d",
+          "flops": 472055808,
+          "input_bytes": 2408448,
+          "output_bytes": 12845056,
+          "weight_bytes": 37632,
+          "total_bytes": 15291136,
+          "arithmetic_intensity": 30.87120590648072
+        },
+        {
+          "name": "layer1.0.conv1",
+          "type": "Conv2d",
+          "flops": 462422016,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 147456,
+          "total_bytes": 6569984,
+          "arithmetic_intensity": 70.38403990024938
+        },
+        {
+          "name": "layer1.0.conv2",
+          "type": "Conv2d",
+          "flops": 462422016,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 147456,
+          "total_bytes": 6569984,
+          "arithmetic_intensity": 70.38403990024938
+        },
+        {
+          "name": "layer1.1.conv1",
+          "type": "Conv2d",
+          "flops": 462422016,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 147456,
+          "total_bytes": 6569984,
+          "arithmetic_intensity": 70.38403990024938
+        },
+        {
+          "name": "layer1.1.conv2",
+          "type": "Conv2d",
+          "flops": 462422016,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 147456,
+          "total_bytes": 6569984,
+          "arithmetic_intensity": 70.38403990024938
+        },
+        {
+          "name": "layer2.0.conv2",
+          "type": "Conv2d",
+          "flops": 462422016,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 589824,
+          "total_bytes": 3801088,
+          "arithmetic_intensity": 121.65517241379311
+        },
+        {
+          "name": "layer2.1.conv1",
+          "type": "Conv2d",
+          "flops": 462422016,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 589824,
+          "total_bytes": 3801088,
+          "arithmetic_intensity": 121.65517241379311
+        },
+        {
+          "name": "layer2.1.conv2",
+          "type": "Conv2d",
+          "flops": 462422016,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 589824,
+          "total_bytes": 3801088,
+          "arithmetic_intensity": 121.65517241379311
+        },
+        {
+          "name": "layer3.0.conv2",
+          "type": "Conv2d",
+          "flops": 462422016,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 2359296,
+          "total_bytes": 3964928,
+          "arithmetic_intensity": 116.62809917355372
+        },
+        {
+          "name": "layer3.1.conv1",
+          "type": "Conv2d",
+          "flops": 462422016,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 2359296,
+          "total_bytes": 3964928,
+          "arithmetic_intensity": 116.62809917355372
+        },
+        {
+          "name": "layer3.1.conv2",
+          "type": "Conv2d",
+          "flops": 462422016,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 2359296,
+          "total_bytes": 3964928,
+          "arithmetic_intensity": 116.62809917355372
+        },
+        {
+          "name": "layer4.0.conv2",
+          "type": "Conv2d",
+          "flops": 462422016,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 9437184,
+          "total_bytes": 10240000,
+          "arithmetic_intensity": 45.1584
+        },
+        {
+          "name": "layer4.1.conv1",
+          "type": "Conv2d",
+          "flops": 462422016,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 9437184,
+          "total_bytes": 10240000,
+          "arithmetic_intensity": 45.1584
+        },
+        {
+          "name": "layer4.1.conv2",
+          "type": "Conv2d",
+          "flops": 462422016,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 9437184,
+          "total_bytes": 10240000,
+          "arithmetic_intensity": 45.1584
+        },
+        {
+          "name": "layer2.0.conv1",
+          "type": "Conv2d",
+          "flops": 231211008,
+          "input_bytes": 3211264,
+          "output_bytes": 1605632,
+          "weight_bytes": 294912,
+          "total_bytes": 5111808,
+          "arithmetic_intensity": 45.23076923076923
+        },
+        {
+          "name": "layer3.0.conv1",
+          "type": "Conv2d",
+          "flops": 231211008,
+          "input_bytes": 1605632,
+          "output_bytes": 802816,
+          "weight_bytes": 1179648,
+          "total_bytes": 3588096,
+          "arithmetic_intensity": 64.43835616438356
+        },
+        {
+          "name": "layer4.0.conv1",
+          "type": "Conv2d",
+          "flops": 231211008,
+          "input_bytes": 802816,
+          "output_bytes": 401408,
+          "weight_bytes": 4718592,
+          "total_bytes": 5922816,
+          "arithmetic_intensity": 39.03734439834025
+        },
+        {
+          "name": "layer2.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 25690112,
+          "input_bytes": 3211264,
+          "output_bytes": 1605632,
+          "weight_bytes": 32768,
+          "total_bytes": 4849664,
+          "arithmetic_intensity": 5.297297297297297
+        },
+        {
+          "name": "layer3.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 25690112,
+          "input_bytes": 1605632,
+          "output_bytes": 802816,
+          "weight_bytes": 131072,
+          "total_bytes": 2539520,
+          "arithmetic_intensity": 10.116129032258064
+        },
+        {
+          "name": "layer4.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 25690112,
+          "input_bytes": 802816,
+          "output_bytes": 401408,
+          "weight_bytes": 524288,
+          "total_bytes": 1728512,
+          "arithmetic_intensity": 14.862559241706162
+        },
+        {
+          "name": "bn1",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 1032,
+          "total_bytes": 25691144,
+          "arithmetic_intensity": 0.24998995762897908
+        },
+        {
+          "name": "fc",
+          "type": "Linear",
+          "flops": 2048000,
+          "input_bytes": 8192,
+          "output_bytes": 16000,
+          "weight_bytes": 2052000,
+          "total_bytes": 2076192,
+          "arithmetic_intensity": 0.9864212943696922
+        },
+        {
+          "name": "layer1.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 1032,
+          "total_bytes": 6423560,
+          "arithmetic_intensity": 0.24995983535609537
+        },
+        {
+          "name": "layer1.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 1032,
+          "total_bytes": 6423560,
+          "arithmetic_intensity": 0.24995983535609537
+        },
+        {
+          "name": "layer1.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 1032,
+          "total_bytes": 6423560,
+          "arithmetic_intensity": 0.24995983535609537
+        },
+        {
+          "name": "layer1.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 1032,
+          "total_bytes": 6423560,
+          "arithmetic_intensity": 0.24995983535609537
+        },
+        {
+          "name": "layer2.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 2056,
+          "total_bytes": 3213320,
+          "arithmetic_intensity": 0.24984004083004493
+        },
+        {
+          "name": "layer2.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 2056,
+          "total_bytes": 3213320,
+          "arithmetic_intensity": 0.24984004083004493
+        },
+        {
+          "name": "layer2.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 2056,
+          "total_bytes": 3213320,
+          "arithmetic_intensity": 0.24984004083004493
+        },
+        {
+          "name": "layer2.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 2056,
+          "total_bytes": 3213320,
+          "arithmetic_intensity": 0.24984004083004493
+        },
+        {
+          "name": "layer2.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 2056,
+          "total_bytes": 3213320,
+          "arithmetic_intensity": 0.24984004083004493
+        },
+        {
+          "name": "layer3.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 4104,
+          "total_bytes": 1609736,
+          "arithmetic_intensity": 0.2493626284061486
+        },
+        {
+          "name": "layer3.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 4104,
+          "total_bytes": 1609736,
+          "arithmetic_intensity": 0.2493626284061486
+        },
+        {
+          "name": "layer3.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 4104,
+          "total_bytes": 1609736,
+          "arithmetic_intensity": 0.2493626284061486
+        },
+        {
+          "name": "layer3.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 4104,
+          "total_bytes": 1609736,
+          "arithmetic_intensity": 0.2493626284061486
+        },
+        {
+          "name": "layer3.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 4104,
+          "total_bytes": 1609736,
+          "arithmetic_intensity": 0.2493626284061486
+        },
+        {
+          "name": "layer4.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 200704,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 8200,
+          "total_bytes": 811016,
+          "arithmetic_intensity": 0.24747230634167514
+        },
+        {
+          "name": "layer4.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 200704,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 8200,
+          "total_bytes": 811016,
+          "arithmetic_intensity": 0.24747230634167514
+        },
+        {
+          "name": "layer4.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 200704,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 8200,
+          "total_bytes": 811016,
+          "arithmetic_intensity": 0.24747230634167514
+        },
+        {
+          "name": "layer4.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 200704,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 8200,
+          "total_bytes": 811016,
+          "arithmetic_intensity": 0.24747230634167514
+        },
+        {
+          "name": "layer4.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 200704,
+          "input_bytes": 401408,
+          "output_bytes": 401408,
+          "weight_bytes": 8200,
+          "total_bytes": 811016,
+          "arithmetic_intensity": 0.24747230634167514
+        },
+        {
+          "name": "avgpool",
+          "type": "AdaptiveAvgPool2d",
+          "flops": 100352,
+          "input_bytes": 401408,
+          "output_bytes": 8192,
+          "weight_bytes": 0,
+          "total_bytes": 409600,
+          "arithmetic_intensity": 0.245
+        },
+        {
+          "name": "relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 0,
+          "total_bytes": 25690112,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "maxpool",
+          "type": "MaxPool2d",
+          "flops": 0,
+          "input_bytes": 12845056,
+          "output_bytes": 3211264,
+          "weight_bytes": 0,
+          "total_bytes": 16056320,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer1.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 0,
+          "total_bytes": 12845056,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer1.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 0,
+          "total_bytes": 12845056,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer2.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 0,
+          "total_bytes": 6422528,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer2.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 0,
+          "total_bytes": 6422528,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer3.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 0,
+          "total_bytes": 3211264,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer3.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 0,
+          "total_bytes": 3211264,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer4.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 0,
+          "total_bytes": 1605632,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer4.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 0,
+          "total_bytes": 1605632,
+          "arithmetic_intensity": 0.0
+        }
+      ]
+    },
+    {
+      "batch_size": 8,
+      "whole_model_flops": 14552526848,
+      "total_flops": 14552526848,
+      "total_bytes": 535776320,
+      "arithmetic_intensity": 27.161571545379235,
+      "layers": [
+        {
+          "name": "conv1",
+          "type": "Conv2d",
+          "flops": 944111616,
+          "input_bytes": 4816896,
+          "output_bytes": 25690112,
+          "weight_bytes": 37632,
+          "total_bytes": 30544640,
+          "arithmetic_intensity": 30.909240246406572
+        },
+        {
+          "name": "layer1.0.conv1",
+          "type": "Conv2d",
+          "flops": 924844032,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 147456,
+          "total_bytes": 12992512,
+          "arithmetic_intensity": 71.1828499369483
+        },
+        {
+          "name": "layer1.0.conv2",
+          "type": "Conv2d",
+          "flops": 924844032,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 147456,
+          "total_bytes": 12992512,
+          "arithmetic_intensity": 71.1828499369483
+        },
+        {
+          "name": "layer1.1.conv1",
+          "type": "Conv2d",
+          "flops": 924844032,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 147456,
+          "total_bytes": 12992512,
+          "arithmetic_intensity": 71.1828499369483
+        },
+        {
+          "name": "layer1.1.conv2",
+          "type": "Conv2d",
+          "flops": 924844032,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 147456,
+          "total_bytes": 12992512,
+          "arithmetic_intensity": 71.1828499369483
+        },
+        {
+          "name": "layer2.0.conv2",
+          "type": "Conv2d",
+          "flops": 924844032,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 589824,
+          "total_bytes": 7012352,
+          "arithmetic_intensity": 131.88785046728972
+        },
+        {
+          "name": "layer2.1.conv1",
+          "type": "Conv2d",
+          "flops": 924844032,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 589824,
+          "total_bytes": 7012352,
+          "arithmetic_intensity": 131.88785046728972
+        },
+        {
+          "name": "layer2.1.conv2",
+          "type": "Conv2d",
+          "flops": 924844032,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 589824,
+          "total_bytes": 7012352,
+          "arithmetic_intensity": 131.88785046728972
+        },
+        {
+          "name": "layer3.0.conv2",
+          "type": "Conv2d",
+          "flops": 924844032,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 2359296,
+          "total_bytes": 5570560,
+          "arithmetic_intensity": 166.0235294117647
+        },
+        {
+          "name": "layer3.1.conv1",
+          "type": "Conv2d",
+          "flops": 924844032,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 2359296,
+          "total_bytes": 5570560,
+          "arithmetic_intensity": 166.0235294117647
+        },
+        {
+          "name": "layer3.1.conv2",
+          "type": "Conv2d",
+          "flops": 924844032,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 2359296,
+          "total_bytes": 5570560,
+          "arithmetic_intensity": 166.0235294117647
+        },
+        {
+          "name": "layer4.0.conv2",
+          "type": "Conv2d",
+          "flops": 924844032,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 9437184,
+          "total_bytes": 11042816,
+          "arithmetic_intensity": 83.75074183976261
+        },
+        {
+          "name": "layer4.1.conv1",
+          "type": "Conv2d",
+          "flops": 924844032,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 9437184,
+          "total_bytes": 11042816,
+          "arithmetic_intensity": 83.75074183976261
+        },
+        {
+          "name": "layer4.1.conv2",
+          "type": "Conv2d",
+          "flops": 924844032,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 9437184,
+          "total_bytes": 11042816,
+          "arithmetic_intensity": 83.75074183976261
+        },
+        {
+          "name": "layer2.0.conv1",
+          "type": "Conv2d",
+          "flops": 462422016,
+          "input_bytes": 6422528,
+          "output_bytes": 3211264,
+          "weight_bytes": 294912,
+          "total_bytes": 9928704,
+          "arithmetic_intensity": 46.57425742574257
+        },
+        {
+          "name": "layer3.0.conv1",
+          "type": "Conv2d",
+          "flops": 462422016,
+          "input_bytes": 3211264,
+          "output_bytes": 1605632,
+          "weight_bytes": 1179648,
+          "total_bytes": 5996544,
+          "arithmetic_intensity": 77.11475409836065
+        },
+        {
+          "name": "layer4.0.conv1",
+          "type": "Conv2d",
+          "flops": 462422016,
+          "input_bytes": 1605632,
+          "output_bytes": 802816,
+          "weight_bytes": 4718592,
+          "total_bytes": 7127040,
+          "arithmetic_intensity": 64.88275862068966
+        },
+        {
+          "name": "layer2.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 51380224,
+          "input_bytes": 6422528,
+          "output_bytes": 3211264,
+          "weight_bytes": 32768,
+          "total_bytes": 9666560,
+          "arithmetic_intensity": 5.315254237288135
+        },
+        {
+          "name": "layer3.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 51380224,
+          "input_bytes": 3211264,
+          "output_bytes": 1605632,
+          "weight_bytes": 131072,
+          "total_bytes": 4947968,
+          "arithmetic_intensity": 10.3841059602649
+        },
+        {
+          "name": "layer4.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 51380224,
+          "input_bytes": 1605632,
+          "output_bytes": 802816,
+          "weight_bytes": 524288,
+          "total_bytes": 2932736,
+          "arithmetic_intensity": 17.519553072625698
+        },
+        {
+          "name": "bn1",
+          "type": "BatchNorm2d",
+          "flops": 12845056,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 1032,
+          "total_bytes": 51381256,
+          "arithmetic_intensity": 0.2499949787136383
+        },
+        {
+          "name": "fc",
+          "type": "Linear",
+          "flops": 4096000,
+          "input_bytes": 16384,
+          "output_bytes": 32000,
+          "weight_bytes": 2052000,
+          "total_bytes": 2100384,
+          "arithmetic_intensity": 1.9501195971784206
+        },
+        {
+          "name": "layer1.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 1032,
+          "total_bytes": 12846088,
+          "arithmetic_intensity": 0.24997991606471948
+        },
+        {
+          "name": "layer1.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 1032,
+          "total_bytes": 12846088,
+          "arithmetic_intensity": 0.24997991606471948
+        },
+        {
+          "name": "layer1.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 1032,
+          "total_bytes": 12846088,
+          "arithmetic_intensity": 0.24997991606471948
+        },
+        {
+          "name": "layer1.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 1032,
+          "total_bytes": 12846088,
+          "arithmetic_intensity": 0.24997991606471948
+        },
+        {
+          "name": "layer2.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 2056,
+          "total_bytes": 6424584,
+          "arithmetic_intensity": 0.24991999481989807
+        },
+        {
+          "name": "layer2.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 2056,
+          "total_bytes": 6424584,
+          "arithmetic_intensity": 0.24991999481989807
+        },
+        {
+          "name": "layer2.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 2056,
+          "total_bytes": 6424584,
+          "arithmetic_intensity": 0.24991999481989807
+        },
+        {
+          "name": "layer2.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 2056,
+          "total_bytes": 6424584,
+          "arithmetic_intensity": 0.24991999481989807
+        },
+        {
+          "name": "layer2.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 2056,
+          "total_bytes": 6424584,
+          "arithmetic_intensity": 0.24991999481989807
+        },
+        {
+          "name": "layer3.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 4104,
+          "total_bytes": 3215368,
+          "arithmetic_intensity": 0.24968090744200974
+        },
+        {
+          "name": "layer3.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 4104,
+          "total_bytes": 3215368,
+          "arithmetic_intensity": 0.24968090744200974
+        },
+        {
+          "name": "layer3.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 4104,
+          "total_bytes": 3215368,
+          "arithmetic_intensity": 0.24968090744200974
+        },
+        {
+          "name": "layer3.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 4104,
+          "total_bytes": 3215368,
+          "arithmetic_intensity": 0.24968090744200974
+        },
+        {
+          "name": "layer3.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 4104,
+          "total_bytes": 3215368,
+          "arithmetic_intensity": 0.24968090744200974
+        },
+        {
+          "name": "layer4.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 8200,
+          "total_bytes": 1613832,
+          "arithmetic_intensity": 0.2487297314714295
+        },
+        {
+          "name": "layer4.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 8200,
+          "total_bytes": 1613832,
+          "arithmetic_intensity": 0.2487297314714295
+        },
+        {
+          "name": "layer4.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 8200,
+          "total_bytes": 1613832,
+          "arithmetic_intensity": 0.2487297314714295
+        },
+        {
+          "name": "layer4.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 8200,
+          "total_bytes": 1613832,
+          "arithmetic_intensity": 0.2487297314714295
+        },
+        {
+          "name": "layer4.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 401408,
+          "input_bytes": 802816,
+          "output_bytes": 802816,
+          "weight_bytes": 8200,
+          "total_bytes": 1613832,
+          "arithmetic_intensity": 0.2487297314714295
+        },
+        {
+          "name": "avgpool",
+          "type": "AdaptiveAvgPool2d",
+          "flops": 200704,
+          "input_bytes": 802816,
+          "output_bytes": 16384,
+          "weight_bytes": 0,
+          "total_bytes": 819200,
+          "arithmetic_intensity": 0.245
+        },
+        {
+          "name": "relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 0,
+          "total_bytes": 51380224,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "maxpool",
+          "type": "MaxPool2d",
+          "flops": 0,
+          "input_bytes": 25690112,
+          "output_bytes": 6422528,
+          "weight_bytes": 0,
+          "total_bytes": 32112640,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer1.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 0,
+          "total_bytes": 25690112,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer1.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 0,
+          "total_bytes": 25690112,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer2.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 0,
+          "total_bytes": 12845056,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer2.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 0,
+          "total_bytes": 12845056,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer3.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 0,
+          "total_bytes": 6422528,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer3.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 0,
+          "total_bytes": 6422528,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer4.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 0,
+          "total_bytes": 3211264,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer4.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 0,
+          "total_bytes": 3211264,
+          "arithmetic_intensity": 0.0
+        }
+      ]
+    },
+    {
+      "batch_size": 16,
+      "whole_model_flops": 29105053696,
+      "total_flops": 29105053696,
+      "total_bytes": 1024756032,
+      "arithmetic_intensity": 28.401934496736878,
+      "layers": [
+        {
+          "name": "conv1",
+          "type": "Conv2d",
+          "flops": 1888223232,
+          "input_bytes": 9633792,
+          "output_bytes": 51380224,
+          "weight_bytes": 37632,
+          "total_bytes": 61051648,
+          "arithmetic_intensity": 30.928292582699815
+        },
+        {
+          "name": "layer1.0.conv1",
+          "type": "Conv2d",
+          "flops": 1849688064,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 147456,
+          "total_bytes": 25837568,
+          "arithmetic_intensity": 71.58909321496512
+        },
+        {
+          "name": "layer1.0.conv2",
+          "type": "Conv2d",
+          "flops": 1849688064,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 147456,
+          "total_bytes": 25837568,
+          "arithmetic_intensity": 71.58909321496512
+        },
+        {
+          "name": "layer1.1.conv1",
+          "type": "Conv2d",
+          "flops": 1849688064,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 147456,
+          "total_bytes": 25837568,
+          "arithmetic_intensity": 71.58909321496512
+        },
+        {
+          "name": "layer1.1.conv2",
+          "type": "Conv2d",
+          "flops": 1849688064,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 147456,
+          "total_bytes": 25837568,
+          "arithmetic_intensity": 71.58909321496512
+        },
+        {
+          "name": "layer2.0.conv2",
+          "type": "Conv2d",
+          "flops": 1849688064,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 589824,
+          "total_bytes": 13434880,
+          "arithmetic_intensity": 137.6780487804878
+        },
+        {
+          "name": "layer2.1.conv1",
+          "type": "Conv2d",
+          "flops": 1849688064,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 589824,
+          "total_bytes": 13434880,
+          "arithmetic_intensity": 137.6780487804878
+        },
+        {
+          "name": "layer2.1.conv2",
+          "type": "Conv2d",
+          "flops": 1849688064,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 589824,
+          "total_bytes": 13434880,
+          "arithmetic_intensity": 137.6780487804878
+        },
+        {
+          "name": "layer3.0.conv2",
+          "type": "Conv2d",
+          "flops": 1849688064,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 2359296,
+          "total_bytes": 8781824,
+          "arithmetic_intensity": 210.62686567164178
+        },
+        {
+          "name": "layer3.1.conv1",
+          "type": "Conv2d",
+          "flops": 1849688064,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 2359296,
+          "total_bytes": 8781824,
+          "arithmetic_intensity": 210.62686567164178
+        },
+        {
+          "name": "layer3.1.conv2",
+          "type": "Conv2d",
+          "flops": 1849688064,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 2359296,
+          "total_bytes": 8781824,
+          "arithmetic_intensity": 210.62686567164178
+        },
+        {
+          "name": "layer4.0.conv2",
+          "type": "Conv2d",
+          "flops": 1849688064,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 9437184,
+          "total_bytes": 12648448,
+          "arithmetic_intensity": 146.23834196891193
+        },
+        {
+          "name": "layer4.1.conv1",
+          "type": "Conv2d",
+          "flops": 1849688064,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 9437184,
+          "total_bytes": 12648448,
+          "arithmetic_intensity": 146.23834196891193
+        },
+        {
+          "name": "layer4.1.conv2",
+          "type": "Conv2d",
+          "flops": 1849688064,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 9437184,
+          "total_bytes": 12648448,
+          "arithmetic_intensity": 146.23834196891193
+        },
+        {
+          "name": "layer2.0.conv1",
+          "type": "Conv2d",
+          "flops": 924844032,
+          "input_bytes": 12845056,
+          "output_bytes": 6422528,
+          "weight_bytes": 294912,
+          "total_bytes": 19562496,
+          "arithmetic_intensity": 47.27638190954774
+        },
+        {
+          "name": "layer3.0.conv1",
+          "type": "Conv2d",
+          "flops": 924844032,
+          "input_bytes": 6422528,
+          "output_bytes": 3211264,
+          "weight_bytes": 1179648,
+          "total_bytes": 10813440,
+          "arithmetic_intensity": 85.52727272727273
+        },
+        {
+          "name": "layer4.0.conv1",
+          "type": "Conv2d",
+          "flops": 924844032,
+          "input_bytes": 3211264,
+          "output_bytes": 1605632,
+          "weight_bytes": 4718592,
+          "total_bytes": 9535488,
+          "arithmetic_intensity": 96.98969072164948
+        },
+        {
+          "name": "layer2.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 102760448,
+          "input_bytes": 12845056,
+          "output_bytes": 6422528,
+          "weight_bytes": 32768,
+          "total_bytes": 19300352,
+          "arithmetic_intensity": 5.32427843803056
+        },
+        {
+          "name": "layer3.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 102760448,
+          "input_bytes": 6422528,
+          "output_bytes": 3211264,
+          "weight_bytes": 131072,
+          "total_bytes": 9764864,
+          "arithmetic_intensity": 10.523489932885907
+        },
+        {
+          "name": "layer4.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 102760448,
+          "input_bytes": 3211264,
+          "output_bytes": 1605632,
+          "weight_bytes": 524288,
+          "total_bytes": 5341184,
+          "arithmetic_intensity": 19.23926380368098
+        },
+        {
+          "name": "bn1",
+          "type": "BatchNorm2d",
+          "flops": 25690112,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 1032,
+          "total_bytes": 102761480,
+          "arithmetic_intensity": 0.24999748933160557
+        },
+        {
+          "name": "fc",
+          "type": "Linear",
+          "flops": 8192000,
+          "input_bytes": 32768,
+          "output_bytes": 64000,
+          "weight_bytes": 2052000,
+          "total_bytes": 2148768,
+          "arithmetic_intensity": 3.81241716183413
+        },
+        {
+          "name": "layer1.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 1032,
+          "total_bytes": 25691144,
+          "arithmetic_intensity": 0.24998995762897908
+        },
+        {
+          "name": "layer1.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 1032,
+          "total_bytes": 25691144,
+          "arithmetic_intensity": 0.24998995762897908
+        },
+        {
+          "name": "layer1.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 1032,
+          "total_bytes": 25691144,
+          "arithmetic_intensity": 0.24998995762897908
+        },
+        {
+          "name": "layer1.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 1032,
+          "total_bytes": 25691144,
+          "arithmetic_intensity": 0.24998995762897908
+        },
+        {
+          "name": "layer2.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 2056,
+          "total_bytes": 12847112,
+          "arithmetic_intensity": 0.24995999100809582
+        },
+        {
+          "name": "layer2.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 2056,
+          "total_bytes": 12847112,
+          "arithmetic_intensity": 0.24995999100809582
+        },
+        {
+          "name": "layer2.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 2056,
+          "total_bytes": 12847112,
+          "arithmetic_intensity": 0.24995999100809582
+        },
+        {
+          "name": "layer2.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 2056,
+          "total_bytes": 12847112,
+          "arithmetic_intensity": 0.24995999100809582
+        },
+        {
+          "name": "layer2.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 2056,
+          "total_bytes": 12847112,
+          "arithmetic_intensity": 0.24995999100809582
+        },
+        {
+          "name": "layer3.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 4104,
+          "total_bytes": 6426632,
+          "arithmetic_intensity": 0.24984035183592276
+        },
+        {
+          "name": "layer3.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 4104,
+          "total_bytes": 6426632,
+          "arithmetic_intensity": 0.24984035183592276
+        },
+        {
+          "name": "layer3.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 4104,
+          "total_bytes": 6426632,
+          "arithmetic_intensity": 0.24984035183592276
+        },
+        {
+          "name": "layer3.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 4104,
+          "total_bytes": 6426632,
+          "arithmetic_intensity": 0.24984035183592276
+        },
+        {
+          "name": "layer3.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 4104,
+          "total_bytes": 6426632,
+          "arithmetic_intensity": 0.24984035183592276
+        },
+        {
+          "name": "layer4.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 8200,
+          "total_bytes": 3219464,
+          "arithmetic_intensity": 0.24936324804377374
+        },
+        {
+          "name": "layer4.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 8200,
+          "total_bytes": 3219464,
+          "arithmetic_intensity": 0.24936324804377374
+        },
+        {
+          "name": "layer4.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 8200,
+          "total_bytes": 3219464,
+          "arithmetic_intensity": 0.24936324804377374
+        },
+        {
+          "name": "layer4.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 8200,
+          "total_bytes": 3219464,
+          "arithmetic_intensity": 0.24936324804377374
+        },
+        {
+          "name": "layer4.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 802816,
+          "input_bytes": 1605632,
+          "output_bytes": 1605632,
+          "weight_bytes": 8200,
+          "total_bytes": 3219464,
+          "arithmetic_intensity": 0.24936324804377374
+        },
+        {
+          "name": "avgpool",
+          "type": "AdaptiveAvgPool2d",
+          "flops": 401408,
+          "input_bytes": 1605632,
+          "output_bytes": 32768,
+          "weight_bytes": 0,
+          "total_bytes": 1638400,
+          "arithmetic_intensity": 0.245
+        },
+        {
+          "name": "relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 0,
+          "total_bytes": 102760448,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "maxpool",
+          "type": "MaxPool2d",
+          "flops": 0,
+          "input_bytes": 51380224,
+          "output_bytes": 12845056,
+          "weight_bytes": 0,
+          "total_bytes": 64225280,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer1.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 0,
+          "total_bytes": 51380224,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer1.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 0,
+          "total_bytes": 51380224,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer2.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 0,
+          "total_bytes": 25690112,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer2.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 0,
+          "total_bytes": 25690112,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer3.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 0,
+          "total_bytes": 12845056,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer3.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 0,
+          "total_bytes": 12845056,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer4.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 0,
+          "total_bytes": 6422528,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer4.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 0,
+          "total_bytes": 6422528,
+          "arithmetic_intensity": 0.0
+        }
+      ]
+    },
+    {
+      "batch_size": 32,
+      "whole_model_flops": 58210107392,
+      "total_flops": 58210107392,
+      "total_bytes": 2002715456,
+      "arithmetic_intensity": 29.06559052990102,
+      "layers": [
+        {
+          "name": "conv1",
+          "type": "Conv2d",
+          "flops": 3776446464,
+          "input_bytes": 19267584,
+          "output_bytes": 102760448,
+          "weight_bytes": 37632,
+          "total_bytes": 122065664,
+          "arithmetic_intensity": 30.937827561401704
+        },
+        {
+          "name": "layer1.0.conv1",
+          "type": "Conv2d",
+          "flops": 3699376128,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 147456,
+          "total_bytes": 51527680,
+          "arithmetic_intensity": 71.7939586645469
+        },
+        {
+          "name": "layer1.0.conv2",
+          "type": "Conv2d",
+          "flops": 3699376128,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 147456,
+          "total_bytes": 51527680,
+          "arithmetic_intensity": 71.7939586645469
+        },
+        {
+          "name": "layer1.1.conv1",
+          "type": "Conv2d",
+          "flops": 3699376128,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 147456,
+          "total_bytes": 51527680,
+          "arithmetic_intensity": 71.7939586645469
+        },
+        {
+          "name": "layer1.1.conv2",
+          "type": "Conv2d",
+          "flops": 3699376128,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 147456,
+          "total_bytes": 51527680,
+          "arithmetic_intensity": 71.7939586645469
+        },
+        {
+          "name": "layer2.0.conv2",
+          "type": "Conv2d",
+          "flops": 3699376128,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 589824,
+          "total_bytes": 26279936,
+          "arithmetic_intensity": 140.76807980049875
+        },
+        {
+          "name": "layer2.1.conv1",
+          "type": "Conv2d",
+          "flops": 3699376128,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 589824,
+          "total_bytes": 26279936,
+          "arithmetic_intensity": 140.76807980049875
+        },
+        {
+          "name": "layer2.1.conv2",
+          "type": "Conv2d",
+          "flops": 3699376128,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 589824,
+          "total_bytes": 26279936,
+          "arithmetic_intensity": 140.76807980049875
+        },
+        {
+          "name": "layer3.0.conv2",
+          "type": "Conv2d",
+          "flops": 3699376128,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 2359296,
+          "total_bytes": 15204352,
+          "arithmetic_intensity": 243.31034482758622
+        },
+        {
+          "name": "layer3.1.conv1",
+          "type": "Conv2d",
+          "flops": 3699376128,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 2359296,
+          "total_bytes": 15204352,
+          "arithmetic_intensity": 243.31034482758622
+        },
+        {
+          "name": "layer3.1.conv2",
+          "type": "Conv2d",
+          "flops": 3699376128,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 2359296,
+          "total_bytes": 15204352,
+          "arithmetic_intensity": 243.31034482758622
+        },
+        {
+          "name": "layer4.0.conv2",
+          "type": "Conv2d",
+          "flops": 3699376128,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 9437184,
+          "total_bytes": 15859712,
+          "arithmetic_intensity": 233.25619834710744
+        },
+        {
+          "name": "layer4.1.conv1",
+          "type": "Conv2d",
+          "flops": 3699376128,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 9437184,
+          "total_bytes": 15859712,
+          "arithmetic_intensity": 233.25619834710744
+        },
+        {
+          "name": "layer4.1.conv2",
+          "type": "Conv2d",
+          "flops": 3699376128,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 9437184,
+          "total_bytes": 15859712,
+          "arithmetic_intensity": 233.25619834710744
+        },
+        {
+          "name": "layer2.0.conv1",
+          "type": "Conv2d",
+          "flops": 1849688064,
+          "input_bytes": 25690112,
+          "output_bytes": 12845056,
+          "weight_bytes": 294912,
+          "total_bytes": 38830080,
+          "arithmetic_intensity": 47.63544303797468
+        },
+        {
+          "name": "layer3.0.conv1",
+          "type": "Conv2d",
+          "flops": 1849688064,
+          "input_bytes": 12845056,
+          "output_bytes": 6422528,
+          "weight_bytes": 1179648,
+          "total_bytes": 20447232,
+          "arithmetic_intensity": 90.46153846153847
+        },
+        {
+          "name": "layer4.0.conv1",
+          "type": "Conv2d",
+          "flops": 1849688064,
+          "input_bytes": 6422528,
+          "output_bytes": 3211264,
+          "weight_bytes": 4718592,
+          "total_bytes": 14352384,
+          "arithmetic_intensity": 128.87671232876713
+        },
+        {
+          "name": "layer2.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 205520896,
+          "input_bytes": 25690112,
+          "output_bytes": 12845056,
+          "weight_bytes": 32768,
+          "total_bytes": 38567936,
+          "arithmetic_intensity": 5.328802039082413
+        },
+        {
+          "name": "layer3.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 205520896,
+          "input_bytes": 12845056,
+          "output_bytes": 6422528,
+          "weight_bytes": 131072,
+          "total_bytes": 19398656,
+          "arithmetic_intensity": 10.594594594594595
+        },
+        {
+          "name": "layer4.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 205520896,
+          "input_bytes": 6422528,
+          "output_bytes": 3211264,
+          "weight_bytes": 524288,
+          "total_bytes": 10158080,
+          "arithmetic_intensity": 20.232258064516127
+        },
+        {
+          "name": "bn1",
+          "type": "BatchNorm2d",
+          "flops": 51380224,
+          "input_bytes": 102760448,
+          "output_bytes": 102760448,
+          "weight_bytes": 1032,
+          "total_bytes": 205521928,
+          "arithmetic_intensity": 0.2499987446594993
+        },
+        {
+          "name": "fc",
+          "type": "Linear",
+          "flops": 16384000,
+          "input_bytes": 65536,
+          "output_bytes": 128000,
+          "weight_bytes": 2052000,
+          "total_bytes": 2245536,
+          "arithmetic_intensity": 7.296253544810682
+        },
+        {
+          "name": "layer1.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 12845056,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 1032,
+          "total_bytes": 51381256,
+          "arithmetic_intensity": 0.2499949787136383
+        },
+        {
+          "name": "layer1.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 12845056,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 1032,
+          "total_bytes": 51381256,
+          "arithmetic_intensity": 0.2499949787136383
+        },
+        {
+          "name": "layer1.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 12845056,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 1032,
+          "total_bytes": 51381256,
+          "arithmetic_intensity": 0.2499949787136383
+        },
+        {
+          "name": "layer1.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 12845056,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 1032,
+          "total_bytes": 51381256,
+          "arithmetic_intensity": 0.2499949787136383
+        },
+        {
+          "name": "layer2.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 2056,
+          "total_bytes": 25692168,
+          "arithmetic_intensity": 0.2499799939032004
+        },
+        {
+          "name": "layer2.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 2056,
+          "total_bytes": 25692168,
+          "arithmetic_intensity": 0.2499799939032004
+        },
+        {
+          "name": "layer2.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 2056,
+          "total_bytes": 25692168,
+          "arithmetic_intensity": 0.2499799939032004
+        },
+        {
+          "name": "layer2.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 2056,
+          "total_bytes": 25692168,
+          "arithmetic_intensity": 0.2499799939032004
+        },
+        {
+          "name": "layer2.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 2056,
+          "total_bytes": 25692168,
+          "arithmetic_intensity": 0.2499799939032004
+        },
+        {
+          "name": "layer3.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 4104,
+          "total_bytes": 12849160,
+          "arithmetic_intensity": 0.2499201504222844
+        },
+        {
+          "name": "layer3.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 4104,
+          "total_bytes": 12849160,
+          "arithmetic_intensity": 0.2499201504222844
+        },
+        {
+          "name": "layer3.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 4104,
+          "total_bytes": 12849160,
+          "arithmetic_intensity": 0.2499201504222844
+        },
+        {
+          "name": "layer3.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 4104,
+          "total_bytes": 12849160,
+          "arithmetic_intensity": 0.2499201504222844
+        },
+        {
+          "name": "layer3.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 4104,
+          "total_bytes": 12849160,
+          "arithmetic_intensity": 0.2499201504222844
+        },
+        {
+          "name": "layer4.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 8200,
+          "total_bytes": 6430728,
+          "arithmetic_intensity": 0.24968121805182866
+        },
+        {
+          "name": "layer4.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 8200,
+          "total_bytes": 6430728,
+          "arithmetic_intensity": 0.24968121805182866
+        },
+        {
+          "name": "layer4.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 8200,
+          "total_bytes": 6430728,
+          "arithmetic_intensity": 0.24968121805182866
+        },
+        {
+          "name": "layer4.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 8200,
+          "total_bytes": 6430728,
+          "arithmetic_intensity": 0.24968121805182866
+        },
+        {
+          "name": "layer4.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 1605632,
+          "input_bytes": 3211264,
+          "output_bytes": 3211264,
+          "weight_bytes": 8200,
+          "total_bytes": 6430728,
+          "arithmetic_intensity": 0.24968121805182866
+        },
+        {
+          "name": "avgpool",
+          "type": "AdaptiveAvgPool2d",
+          "flops": 802816,
+          "input_bytes": 3211264,
+          "output_bytes": 65536,
+          "weight_bytes": 0,
+          "total_bytes": 3276800,
+          "arithmetic_intensity": 0.245
+        },
+        {
+          "name": "relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 102760448,
+          "output_bytes": 102760448,
+          "weight_bytes": 0,
+          "total_bytes": 205520896,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "maxpool",
+          "type": "MaxPool2d",
+          "flops": 0,
+          "input_bytes": 102760448,
+          "output_bytes": 25690112,
+          "weight_bytes": 0,
+          "total_bytes": 128450560,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer1.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 0,
+          "total_bytes": 102760448,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer1.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 0,
+          "total_bytes": 102760448,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer2.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 0,
+          "total_bytes": 51380224,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer2.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 0,
+          "total_bytes": 51380224,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer3.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 0,
+          "total_bytes": 25690112,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer3.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 0,
+          "total_bytes": 25690112,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer4.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 0,
+          "total_bytes": 12845056,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer4.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 0,
+          "total_bytes": 12845056,
+          "arithmetic_intensity": 0.0
+        }
+      ]
+    },
+    {
+      "batch_size": 64,
+      "whole_model_flops": 116420214784,
+      "total_flops": 116420214784,
+      "total_bytes": 3958634304,
+      "arithmetic_intensity": 29.40918656375085,
+      "layers": [
+        {
+          "name": "conv1",
+          "type": "Conv2d",
+          "flops": 7552892928,
+          "input_bytes": 38535168,
+          "output_bytes": 205520896,
+          "weight_bytes": 37632,
+          "total_bytes": 244093696,
+          "arithmetic_intensity": 30.94259725576854
+        },
+        {
+          "name": "layer1.0.conv1",
+          "type": "Conv2d",
+          "flops": 7398752256,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 147456,
+          "total_bytes": 102907904,
+          "arithmetic_intensity": 71.89683171469511
+        },
+        {
+          "name": "layer1.0.conv2",
+          "type": "Conv2d",
+          "flops": 7398752256,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 147456,
+          "total_bytes": 102907904,
+          "arithmetic_intensity": 71.89683171469511
+        },
+        {
+          "name": "layer1.1.conv1",
+          "type": "Conv2d",
+          "flops": 7398752256,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 147456,
+          "total_bytes": 102907904,
+          "arithmetic_intensity": 71.89683171469511
+        },
+        {
+          "name": "layer1.1.conv2",
+          "type": "Conv2d",
+          "flops": 7398752256,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 147456,
+          "total_bytes": 102907904,
+          "arithmetic_intensity": 71.89683171469511
+        },
+        {
+          "name": "layer2.0.conv2",
+          "type": "Conv2d",
+          "flops": 7398752256,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 589824,
+          "total_bytes": 51970048,
+          "arithmetic_intensity": 142.3656998738966
+        },
+        {
+          "name": "layer2.1.conv1",
+          "type": "Conv2d",
+          "flops": 7398752256,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 589824,
+          "total_bytes": 51970048,
+          "arithmetic_intensity": 142.3656998738966
+        },
+        {
+          "name": "layer2.1.conv2",
+          "type": "Conv2d",
+          "flops": 7398752256,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 589824,
+          "total_bytes": 51970048,
+          "arithmetic_intensity": 142.3656998738966
+        },
+        {
+          "name": "layer3.0.conv2",
+          "type": "Conv2d",
+          "flops": 7398752256,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 2359296,
+          "total_bytes": 28049408,
+          "arithmetic_intensity": 263.77570093457945
+        },
+        {
+          "name": "layer3.1.conv1",
+          "type": "Conv2d",
+          "flops": 7398752256,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 2359296,
+          "total_bytes": 28049408,
+          "arithmetic_intensity": 263.77570093457945
+        },
+        {
+          "name": "layer3.1.conv2",
+          "type": "Conv2d",
+          "flops": 7398752256,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 2359296,
+          "total_bytes": 28049408,
+          "arithmetic_intensity": 263.77570093457945
+        },
+        {
+          "name": "layer4.0.conv2",
+          "type": "Conv2d",
+          "flops": 7398752256,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 9437184,
+          "total_bytes": 22282240,
+          "arithmetic_intensity": 332.0470588235294
+        },
+        {
+          "name": "layer4.1.conv1",
+          "type": "Conv2d",
+          "flops": 7398752256,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 9437184,
+          "total_bytes": 22282240,
+          "arithmetic_intensity": 332.0470588235294
+        },
+        {
+          "name": "layer4.1.conv2",
+          "type": "Conv2d",
+          "flops": 7398752256,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 9437184,
+          "total_bytes": 22282240,
+          "arithmetic_intensity": 332.0470588235294
+        },
+        {
+          "name": "layer2.0.conv1",
+          "type": "Conv2d",
+          "flops": 3699376128,
+          "input_bytes": 51380224,
+          "output_bytes": 25690112,
+          "weight_bytes": 294912,
+          "total_bytes": 77365248,
+          "arithmetic_intensity": 47.81702668360864
+        },
+        {
+          "name": "layer3.0.conv1",
+          "type": "Conv2d",
+          "flops": 3699376128,
+          "input_bytes": 25690112,
+          "output_bytes": 12845056,
+          "weight_bytes": 1179648,
+          "total_bytes": 39714816,
+          "arithmetic_intensity": 93.14851485148515
+        },
+        {
+          "name": "layer4.0.conv1",
+          "type": "Conv2d",
+          "flops": 3699376128,
+          "input_bytes": 12845056,
+          "output_bytes": 6422528,
+          "weight_bytes": 4718592,
+          "total_bytes": 23986176,
+          "arithmetic_intensity": 154.2295081967213
+        },
+        {
+          "name": "layer2.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 411041792,
+          "input_bytes": 51380224,
+          "output_bytes": 25690112,
+          "weight_bytes": 32768,
+          "total_bytes": 77103104,
+          "arithmetic_intensity": 5.331066723331917
+        },
+        {
+          "name": "layer3.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 411041792,
+          "input_bytes": 25690112,
+          "output_bytes": 12845056,
+          "weight_bytes": 131072,
+          "total_bytes": 38666240,
+          "arithmetic_intensity": 10.63050847457627
+        },
+        {
+          "name": "layer4.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 411041792,
+          "input_bytes": 12845056,
+          "output_bytes": 6422528,
+          "weight_bytes": 524288,
+          "total_bytes": 19791872,
+          "arithmetic_intensity": 20.7682119205298
+        },
+        {
+          "name": "bn1",
+          "type": "BatchNorm2d",
+          "flops": 102760448,
+          "input_bytes": 205520896,
+          "output_bytes": 205520896,
+          "weight_bytes": 1032,
+          "total_bytes": 411042824,
+          "arithmetic_intensity": 0.24999937232817376
+        },
+        {
+          "name": "fc",
+          "type": "Linear",
+          "flops": 32768000,
+          "input_bytes": 131072,
+          "output_bytes": 256000,
+          "weight_bytes": 2052000,
+          "total_bytes": 2439072,
+          "arithmetic_intensity": 13.434617756261398
+        },
+        {
+          "name": "layer1.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 25690112,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 1032,
+          "total_bytes": 102761480,
+          "arithmetic_intensity": 0.24999748933160557
+        },
+        {
+          "name": "layer1.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 25690112,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 1032,
+          "total_bytes": 102761480,
+          "arithmetic_intensity": 0.24999748933160557
+        },
+        {
+          "name": "layer1.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 25690112,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 1032,
+          "total_bytes": 102761480,
+          "arithmetic_intensity": 0.24999748933160557
+        },
+        {
+          "name": "layer1.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 25690112,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 1032,
+          "total_bytes": 102761480,
+          "arithmetic_intensity": 0.24999748933160557
+        },
+        {
+          "name": "layer2.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 12845056,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 2056,
+          "total_bytes": 51382280,
+          "arithmetic_intensity": 0.24998999655134027
+        },
+        {
+          "name": "layer2.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 12845056,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 2056,
+          "total_bytes": 51382280,
+          "arithmetic_intensity": 0.24998999655134027
+        },
+        {
+          "name": "layer2.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 12845056,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 2056,
+          "total_bytes": 51382280,
+          "arithmetic_intensity": 0.24998999655134027
+        },
+        {
+          "name": "layer2.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 12845056,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 2056,
+          "total_bytes": 51382280,
+          "arithmetic_intensity": 0.24998999655134027
+        },
+        {
+          "name": "layer2.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 12845056,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 2056,
+          "total_bytes": 51382280,
+          "arithmetic_intensity": 0.24998999655134027
+        },
+        {
+          "name": "layer3.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 4104,
+          "total_bytes": 25694216,
+          "arithmetic_intensity": 0.24996006883416874
+        },
+        {
+          "name": "layer3.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 4104,
+          "total_bytes": 25694216,
+          "arithmetic_intensity": 0.24996006883416874
+        },
+        {
+          "name": "layer3.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 4104,
+          "total_bytes": 25694216,
+          "arithmetic_intensity": 0.24996006883416874
+        },
+        {
+          "name": "layer3.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 4104,
+          "total_bytes": 25694216,
+          "arithmetic_intensity": 0.24996006883416874
+        },
+        {
+          "name": "layer3.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 4104,
+          "total_bytes": 25694216,
+          "arithmetic_intensity": 0.24996006883416874
+        },
+        {
+          "name": "layer4.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 8200,
+          "total_bytes": 12853256,
+          "arithmetic_intensity": 0.24984050733915203
+        },
+        {
+          "name": "layer4.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 8200,
+          "total_bytes": 12853256,
+          "arithmetic_intensity": 0.24984050733915203
+        },
+        {
+          "name": "layer4.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 8200,
+          "total_bytes": 12853256,
+          "arithmetic_intensity": 0.24984050733915203
+        },
+        {
+          "name": "layer4.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 8200,
+          "total_bytes": 12853256,
+          "arithmetic_intensity": 0.24984050733915203
+        },
+        {
+          "name": "layer4.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 3211264,
+          "input_bytes": 6422528,
+          "output_bytes": 6422528,
+          "weight_bytes": 8200,
+          "total_bytes": 12853256,
+          "arithmetic_intensity": 0.24984050733915203
+        },
+        {
+          "name": "avgpool",
+          "type": "AdaptiveAvgPool2d",
+          "flops": 1605632,
+          "input_bytes": 6422528,
+          "output_bytes": 131072,
+          "weight_bytes": 0,
+          "total_bytes": 6553600,
+          "arithmetic_intensity": 0.245
+        },
+        {
+          "name": "relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 205520896,
+          "output_bytes": 205520896,
+          "weight_bytes": 0,
+          "total_bytes": 411041792,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "maxpool",
+          "type": "MaxPool2d",
+          "flops": 0,
+          "input_bytes": 205520896,
+          "output_bytes": 51380224,
+          "weight_bytes": 0,
+          "total_bytes": 256901120,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer1.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 102760448,
+          "output_bytes": 102760448,
+          "weight_bytes": 0,
+          "total_bytes": 205520896,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer1.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 102760448,
+          "output_bytes": 102760448,
+          "weight_bytes": 0,
+          "total_bytes": 205520896,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer2.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 0,
+          "total_bytes": 102760448,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer2.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 0,
+          "total_bytes": 102760448,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer3.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 0,
+          "total_bytes": 51380224,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer3.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 0,
+          "total_bytes": 51380224,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer4.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 0,
+          "total_bytes": 25690112,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer4.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 0,
+          "total_bytes": 25690112,
+          "arithmetic_intensity": 0.0
+        }
+      ]
+    },
+    {
+      "batch_size": 128,
+      "whole_model_flops": 232840429568,
+      "total_flops": 232840429568,
+      "total_bytes": 7870472000,
+      "arithmetic_intensity": 29.584049033908006,
+      "layers": [
+        {
+          "name": "conv1",
+          "type": "Conv2d",
+          "flops": 15105785856,
+          "input_bytes": 77070336,
+          "output_bytes": 411041792,
+          "weight_bytes": 37632,
+          "total_bytes": 488149760,
+          "arithmetic_intensity": 30.944982654503406
+        },
+        {
+          "name": "layer1.0.conv1",
+          "type": "Conv2d",
+          "flops": 14797504512,
+          "input_bytes": 102760448,
+          "output_bytes": 102760448,
+          "weight_bytes": 147456,
+          "total_bytes": 205668352,
+          "arithmetic_intensity": 71.94837887357603
+        },
+        {
+          "name": "layer1.0.conv2",
+          "type": "Conv2d",
+          "flops": 14797504512,
+          "input_bytes": 102760448,
+          "output_bytes": 102760448,
+          "weight_bytes": 147456,
+          "total_bytes": 205668352,
+          "arithmetic_intensity": 71.94837887357603
+        },
+        {
+          "name": "layer1.1.conv1",
+          "type": "Conv2d",
+          "flops": 14797504512,
+          "input_bytes": 102760448,
+          "output_bytes": 102760448,
+          "weight_bytes": 147456,
+          "total_bytes": 205668352,
+          "arithmetic_intensity": 71.94837887357603
+        },
+        {
+          "name": "layer1.1.conv2",
+          "type": "Conv2d",
+          "flops": 14797504512,
+          "input_bytes": 102760448,
+          "output_bytes": 102760448,
+          "weight_bytes": 147456,
+          "total_bytes": 205668352,
+          "arithmetic_intensity": 71.94837887357603
+        },
+        {
+          "name": "layer2.0.conv2",
+          "type": "Conv2d",
+          "flops": 14797504512,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 589824,
+          "total_bytes": 103350272,
+          "arithmetic_intensity": 143.17818642993024
+        },
+        {
+          "name": "layer2.1.conv1",
+          "type": "Conv2d",
+          "flops": 14797504512,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 589824,
+          "total_bytes": 103350272,
+          "arithmetic_intensity": 143.17818642993024
+        },
+        {
+          "name": "layer2.1.conv2",
+          "type": "Conv2d",
+          "flops": 14797504512,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 589824,
+          "total_bytes": 103350272,
+          "arithmetic_intensity": 143.17818642993024
+        },
+        {
+          "name": "layer3.0.conv2",
+          "type": "Conv2d",
+          "flops": 14797504512,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 2359296,
+          "total_bytes": 53739520,
+          "arithmetic_intensity": 275.3560975609756
+        },
+        {
+          "name": "layer3.1.conv1",
+          "type": "Conv2d",
+          "flops": 14797504512,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 2359296,
+          "total_bytes": 53739520,
+          "arithmetic_intensity": 275.3560975609756
+        },
+        {
+          "name": "layer3.1.conv2",
+          "type": "Conv2d",
+          "flops": 14797504512,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 2359296,
+          "total_bytes": 53739520,
+          "arithmetic_intensity": 275.3560975609756
+        },
+        {
+          "name": "layer4.0.conv2",
+          "type": "Conv2d",
+          "flops": 14797504512,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 9437184,
+          "total_bytes": 35127296,
+          "arithmetic_intensity": 421.25373134328356
+        },
+        {
+          "name": "layer4.1.conv1",
+          "type": "Conv2d",
+          "flops": 14797504512,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 9437184,
+          "total_bytes": 35127296,
+          "arithmetic_intensity": 421.25373134328356
+        },
+        {
+          "name": "layer4.1.conv2",
+          "type": "Conv2d",
+          "flops": 14797504512,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 9437184,
+          "total_bytes": 35127296,
+          "arithmetic_intensity": 421.25373134328356
+        },
+        {
+          "name": "layer2.0.conv1",
+          "type": "Conv2d",
+          "flops": 7398752256,
+          "input_bytes": 102760448,
+          "output_bytes": 51380224,
+          "weight_bytes": 294912,
+          "total_bytes": 154435584,
+          "arithmetic_intensity": 47.90833863781031
+        },
+        {
+          "name": "layer3.0.conv1",
+          "type": "Conv2d",
+          "flops": 7398752256,
+          "input_bytes": 51380224,
+          "output_bytes": 25690112,
+          "weight_bytes": 1179648,
+          "total_bytes": 78249984,
+          "arithmetic_intensity": 94.55276381909547
+        },
+        {
+          "name": "layer4.0.conv1",
+          "type": "Conv2d",
+          "flops": 7398752256,
+          "input_bytes": 25690112,
+          "output_bytes": 12845056,
+          "weight_bytes": 4718592,
+          "total_bytes": 43253760,
+          "arithmetic_intensity": 171.05454545454546
+        },
+        {
+          "name": "layer2.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 822083584,
+          "input_bytes": 102760448,
+          "output_bytes": 51380224,
+          "weight_bytes": 32768,
+          "total_bytes": 154173440,
+          "arithmetic_intensity": 5.332199787460149
+        },
+        {
+          "name": "layer3.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 822083584,
+          "input_bytes": 51380224,
+          "output_bytes": 25690112,
+          "weight_bytes": 131072,
+          "total_bytes": 77201408,
+          "arithmetic_intensity": 10.64855687606112
+        },
+        {
+          "name": "layer4.0.downsample.0",
+          "type": "Conv2d",
+          "flops": 822083584,
+          "input_bytes": 25690112,
+          "output_bytes": 12845056,
+          "weight_bytes": 524288,
+          "total_bytes": 39059456,
+          "arithmetic_intensity": 21.046979865771814
+        },
+        {
+          "name": "bn1",
+          "type": "BatchNorm2d",
+          "flops": 205520896,
+          "input_bytes": 411041792,
+          "output_bytes": 411041792,
+          "weight_bytes": 1032,
+          "total_bytes": 822084616,
+          "arithmetic_intensity": 0.24999968616369292
+        },
+        {
+          "name": "fc",
+          "type": "Linear",
+          "flops": 65536000,
+          "input_bytes": 262144,
+          "output_bytes": 512000,
+          "weight_bytes": 2052000,
+          "total_bytes": 2826144,
+          "arithmetic_intensity": 23.189193473510198
+        },
+        {
+          "name": "layer1.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 51380224,
+          "input_bytes": 102760448,
+          "output_bytes": 102760448,
+          "weight_bytes": 1032,
+          "total_bytes": 205521928,
+          "arithmetic_intensity": 0.2499987446594993
+        },
+        {
+          "name": "layer1.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 51380224,
+          "input_bytes": 102760448,
+          "output_bytes": 102760448,
+          "weight_bytes": 1032,
+          "total_bytes": 205521928,
+          "arithmetic_intensity": 0.2499987446594993
+        },
+        {
+          "name": "layer1.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 51380224,
+          "input_bytes": 102760448,
+          "output_bytes": 102760448,
+          "weight_bytes": 1032,
+          "total_bytes": 205521928,
+          "arithmetic_intensity": 0.2499987446594993
+        },
+        {
+          "name": "layer1.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 51380224,
+          "input_bytes": 102760448,
+          "output_bytes": 102760448,
+          "weight_bytes": 1032,
+          "total_bytes": 205521928,
+          "arithmetic_intensity": 0.2499987446594993
+        },
+        {
+          "name": "layer2.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 25690112,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 2056,
+          "total_bytes": 102762504,
+          "arithmetic_intensity": 0.24999499817559914
+        },
+        {
+          "name": "layer2.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 25690112,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 2056,
+          "total_bytes": 102762504,
+          "arithmetic_intensity": 0.24999499817559914
+        },
+        {
+          "name": "layer2.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 25690112,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 2056,
+          "total_bytes": 102762504,
+          "arithmetic_intensity": 0.24999499817559914
+        },
+        {
+          "name": "layer2.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 25690112,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 2056,
+          "total_bytes": 102762504,
+          "arithmetic_intensity": 0.24999499817559914
+        },
+        {
+          "name": "layer2.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 25690112,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 2056,
+          "total_bytes": 102762504,
+          "arithmetic_intensity": 0.24999499817559914
+        },
+        {
+          "name": "layer3.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 12845056,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 4104,
+          "total_bytes": 51384328,
+          "arithmetic_intensity": 0.249980032822459
+        },
+        {
+          "name": "layer3.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 12845056,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 4104,
+          "total_bytes": 51384328,
+          "arithmetic_intensity": 0.249980032822459
+        },
+        {
+          "name": "layer3.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 12845056,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 4104,
+          "total_bytes": 51384328,
+          "arithmetic_intensity": 0.249980032822459
+        },
+        {
+          "name": "layer3.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 12845056,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 4104,
+          "total_bytes": 51384328,
+          "arithmetic_intensity": 0.249980032822459
+        },
+        {
+          "name": "layer3.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 12845056,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 4104,
+          "total_bytes": 51384328,
+          "arithmetic_intensity": 0.249980032822459
+        },
+        {
+          "name": "layer4.0.bn1",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 8200,
+          "total_bytes": 25698312,
+          "arithmetic_intensity": 0.24992022822355026
+        },
+        {
+          "name": "layer4.0.bn2",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 8200,
+          "total_bytes": 25698312,
+          "arithmetic_intensity": 0.24992022822355026
+        },
+        {
+          "name": "layer4.0.downsample.1",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 8200,
+          "total_bytes": 25698312,
+          "arithmetic_intensity": 0.24992022822355026
+        },
+        {
+          "name": "layer4.1.bn1",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 8200,
+          "total_bytes": 25698312,
+          "arithmetic_intensity": 0.24992022822355026
+        },
+        {
+          "name": "layer4.1.bn2",
+          "type": "BatchNorm2d",
+          "flops": 6422528,
+          "input_bytes": 12845056,
+          "output_bytes": 12845056,
+          "weight_bytes": 8200,
+          "total_bytes": 25698312,
+          "arithmetic_intensity": 0.24992022822355026
+        },
+        {
+          "name": "avgpool",
+          "type": "AdaptiveAvgPool2d",
+          "flops": 3211264,
+          "input_bytes": 12845056,
+          "output_bytes": 262144,
+          "weight_bytes": 0,
+          "total_bytes": 13107200,
+          "arithmetic_intensity": 0.245
+        },
+        {
+          "name": "relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 411041792,
+          "output_bytes": 411041792,
+          "weight_bytes": 0,
+          "total_bytes": 822083584,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "maxpool",
+          "type": "MaxPool2d",
+          "flops": 0,
+          "input_bytes": 411041792,
+          "output_bytes": 102760448,
+          "weight_bytes": 0,
+          "total_bytes": 513802240,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer1.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 205520896,
+          "output_bytes": 205520896,
+          "weight_bytes": 0,
+          "total_bytes": 411041792,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer1.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 205520896,
+          "output_bytes": 205520896,
+          "weight_bytes": 0,
+          "total_bytes": 411041792,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer2.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 102760448,
+          "output_bytes": 102760448,
+          "weight_bytes": 0,
+          "total_bytes": 205520896,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer2.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 102760448,
+          "output_bytes": 102760448,
+          "weight_bytes": 0,
+          "total_bytes": 205520896,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer3.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 0,
+          "total_bytes": 102760448,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer3.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 51380224,
+          "output_bytes": 51380224,
+          "weight_bytes": 0,
+          "total_bytes": 102760448,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer4.0.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 0,
+          "total_bytes": 51380224,
+          "arithmetic_intensity": 0.0
+        },
+        {
+          "name": "layer4.1.relu",
+          "type": "ReLU",
+          "flops": 0,
+          "input_bytes": 25690112,
+          "output_bytes": 25690112,
+          "weight_bytes": 0,
+          "total_bytes": 51380224,
+          "arithmetic_intensity": 0.0
+        }
+      ]
+    }
+  ]
+}
