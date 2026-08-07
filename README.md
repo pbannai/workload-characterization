@@ -8,7 +8,7 @@ Profiling utilities for characterizing model inference workloads on-device
 - `scripts/profile_resnet18.py` — runs a batch-size latency/throughput sweep
   and/or a per-op CPU profile of ResNet18, in fp32 or statically-quantized
   INT8, writing results as JSON.
-- `results/` — JSON outputs and Chrome traces from the last run of each variant.
+- `results/` — JSON outputs, Chrome traces, and the roofline plot PNG from the last run of each variant.
 
 ## Usage
 
@@ -19,6 +19,10 @@ python3 scripts/profile_resnet18.py --mode both
 - `--mode sweep` — only run the batch-size sweep, writes `results/batch_sweep_resnet18*.json`
 - `--mode ops` — only run the per-op profile, writes `results/op_profile_resnet18*.json`
 - `--mode both` (default) — run both
+- `--mode ai` — fvcore-based arithmetic-intensity analysis, swept over
+  `--batch-sizes`, writes `results/arithmetic_intensity_resnet18_batch.json`.
+  Not device-suffixed — FLOPs/bytes are a static property of the model graph
+  and batch size, confirmed identical whether computed on CPU or MPS.
 - `--precision fp32|int8` (default `fp32`) — `int8` statically quantizes the
   model (qnnpack) and always runs on CPU, since MPS has no quantized-op
   support. Adds an `_int8` suffix to output filenames.
@@ -139,3 +143,45 @@ platform. On hardware where fp32 CPU conv *does* hit an optimized backend
 (e.g. x86 with MKLDNN, or just using MPS as above), the quantization delta
 would look different. (Single-run measurements — illustrative, not a
 rigorous benchmark.)
+
+## Arithmetic intensity & roofline (ResNet18, FP32, batch=1..128)
+
+fvcore's `FlopCountAnalysis` (`--mode ai`) gives a per-layer, device-independent
+count of FLOPs and bytes moved, from which we can compute **arithmetic
+intensity** (FLOPs/byte) and plot it against **attained performance**
+(FLOPs/s, measured on MPS) — a roofline view of where this workload sits
+relative to the hardware's advertised limits (307 GB/s memory bandwidth,
+8.3 TFLOP/s peak compute; ridge point at AI ≈ 27.04 ops/byte, i.e. 8,300 ÷ 307).
+
+| Batch | AI (ops/byte) | Attained (GFLOP/s) | Region |
+|------:|---------------:|--------------------:|--------|
+|     1 |          16.86 |               1,276 | memory-bound |
+|     2 |          21.52 |               1,807 | memory-bound |
+|     4 |          24.98 |               2,217 | memory-bound |
+|     8 |          27.16 |               2,451 | compute-bound |
+|    16 |          28.40 |               2,591 | compute-bound |
+|    32 |          29.07 |               2,605 | compute-bound |
+|    64 |          29.41 |               2,602 | compute-bound |
+|   128 |          29.58 |               2,595 | compute-bound |
+
+- **AI rises with batch size because weight reads get amortized.** Bytes moved
+  = weights (fixed — read once per layer regardless of batch) + activations
+  (scale linearly with batch). At batch=1, weight reads are a sizeable
+  fraction of total bytes; by batch≥32 they're negligible next to activation
+  traffic, so AI climbs toward an asymptote (~29.6 ops/byte) rather than
+  growing indefinitely.
+
+- **Batches 1/2/4 are memory-bound; batch 8 onward is compute-bound**, by the
+  roofline's own arithmetic-intensity criterion — they fall left vs. right of
+  the ridge point.
+
+- **Even past the ridge, attained throughput never exceeds ~31% of peak
+  compute** (2.6 of 8.3 TFLOP/s). So crossing into the "compute-bound" region
+  arithmetically doesn't mean the GPU is anywhere near its ceiling — the
+  remaining gap is overhead the roofline model doesn't capture by design
+  (kernel-launch cost, no operator fusion across ResNet18's many small
+  conv/BN/ReLU ops, etc.), not insufficient arithmetic intensity.
+
+See `results/resnet18_roofline_fp32.png` for the plot and
+`results/arithmetic_intensity_resnet18_batch.json` for the full per-layer,
+per-batch-size breakdown.
