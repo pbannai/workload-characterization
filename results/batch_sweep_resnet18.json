@@ -6,51 +6,51 @@
   "results": [
     {
       "batch_size": 1,
-      "total_ms": 1.423728339999999,
-      "per_image_ms": 1.423728339999999,
-      "throughput_img_per_s": 702.3811860063141
+      "total_ms": 1.42522166,
+      "per_image_ms": 1.42522166,
+      "throughput_img_per_s": 701.6452444316626
     },
     {
       "batch_size": 2,
-      "total_ms": 2.0311891799999993,
-      "per_image_ms": 1.0155945899999996,
-      "throughput_img_per_s": 984.6448670034765
+      "total_ms": 2.0129350000000024,
+      "per_image_ms": 1.0064675000000012,
+      "throughput_img_per_s": 993.5740597684465
     },
     {
       "batch_size": 4,
-      "total_ms": 3.293218320000002,
-      "per_image_ms": 0.8233045800000005,
-      "throughput_img_per_s": 1214.6173169594167
+      "total_ms": 3.2823608399999937,
+      "per_image_ms": 0.8205902099999984,
+      "throughput_img_per_s": 1218.6350602452371
     },
     {
       "batch_size": 8,
-      "total_ms": 5.89936834,
-      "per_image_ms": 0.7374210425,
-      "throughput_img_per_s": 1356.0773864138819
+      "total_ms": 5.936854159999996,
+      "per_image_ms": 0.7421067699999995,
+      "throughput_img_per_s": 1347.514994372037
     },
     {
       "batch_size": 16,
-      "total_ms": 11.11895332,
-      "per_image_ms": 0.6949345825,
-      "throughput_img_per_s": 1438.9843665608626
+      "total_ms": 11.234884999999997,
+      "per_image_ms": 0.7021803124999998,
+      "throughput_img_per_s": 1424.1356275564908
     },
     {
       "batch_size": 32,
-      "total_ms": 22.24186082,
-      "per_image_ms": 0.695058150625,
-      "throughput_img_per_s": 1438.7285424979113
+      "total_ms": 22.34873584,
+      "per_image_ms": 0.698397995,
+      "throughput_img_per_s": 1431.8483259677744
     },
     {
       "batch_size": 64,
-      "total_ms": 44.384046659999996,
-      "per_image_ms": 0.6935007290624999,
-      "throughput_img_per_s": 1441.9595511483271
+      "total_ms": 44.74331749999999,
+      "per_image_ms": 0.6991143359374998,
+      "throughput_img_per_s": 1430.3811960299997
     },
     {
       "batch_size": 128,
-      "total_ms": 89.52507417999999,
-      "per_image_ms": 0.6994146420312499,
-      "throughput_img_per_s": 1429.7670364689334
+      "total_ms": 89.71488500000001,
+      "per_image_ms": 0.7008975390625001,
+      "throughput_img_per_s": 1426.7420618105903
     }
   ]
 }
