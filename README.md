@@ -1,7 +1,7 @@
 # workload-characterization
 
 Profiling utilities for characterizing model inference workloads on-device
-(currently ResNet18 on Apple Silicon MPS, with an fp32/int8 precision comparison).
+(currently ResNet18 on an Apple M5 Pro's GPU via MPS, with an fp32/int8 precision comparison).
 
 ## Layout
 
@@ -149,9 +149,11 @@ rigorous benchmark.)
 fvcore's `FlopCountAnalysis` (`--mode ai`) gives a per-layer, device-independent
 count of FLOPs and bytes moved, from which we can compute **arithmetic
 intensity** (FLOPs/byte) and plot it against **attained performance**
-(FLOPs/s, measured on MPS) — a roofline view of where this workload sits
-relative to the hardware's advertised limits (307 GB/s memory bandwidth,
-8.3 TFLOP/s peak compute; ridge point at AI ≈ 27.04 ops/byte, i.e. 8,300 ÷ 307).
+(FLOPs/s, measured on the Apple M5 Pro's GPU via MPS) — a roofline view of
+where this workload sits relative to the chip's advertised limits: 307 GB/s
+memory bandwidth and 8.3 TFLOP/s (FP32) peak compute, both from Apple's
+published M5 Pro specs. Ridge point (where the two roofs meet) sits at
+AI ≈ 27.04 ops/byte, i.e. 8,300 ÷ 307.
 
 | Batch | AI (ops/byte) | Attained (GFLOP/s) | Region |
 |------:|---------------:|--------------------:|--------|
